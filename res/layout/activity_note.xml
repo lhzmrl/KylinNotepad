@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.kylin.kylinnotepad.view.VariableActionBar
+            android:id="@+id/act_note_var_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:paddingLeft="@dimen/actionbar_padding_left"
+            android:paddingRight="@dimen/actionbar_padding_right" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/act_note_et_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="#0000"
+                    android:hint="@string/edit_title"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/act_note_tv_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/act_note_et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0000"
+                    android:hint="@string/edit_content" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/act_note_btn_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="播放视频" />
+
+        <LinearLayout
+            android:id="@+id/act_note_audioview"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="#e0e0e0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <com.kylin.kylinnotepad.view.AudioPlayView
+                android:id="@+id/act_note_apv"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="0.1"
+                android:focusable="true" />
+
+            <Button
+                android:id="@+id/act_note_btn_del_audio"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/img_btn_close"
+                android:padding="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/act_note_view_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:visibility="gone" />
+
+</RelativeLayout>

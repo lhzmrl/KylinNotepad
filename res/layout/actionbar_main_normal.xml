@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center" >
+    
+    <Button 
+        android:id="@+id/actbar_normal_btn_navigation"
+        style="@style/ImageButtonStyle"
+        android:background="@drawable/img_navigation"/>
+    
+    <TextView 
+        android:id="@+id/actbar_normal_tv_title"
+        style="@style/TextNavigationTitle"
+        android:layout_width="0dp"
+        android:layout_weight="0.1"/>
+    
+    <Button 
+        android:id="@+id/actbar_normal_btn_search"
+        style="@style/ImageButtonStyle"
+        android:background="@drawable/img_search"/>
+    
+    <Button 
+        android:id="@+id/actbar_normal_btn_overflow"
+        style="@style/ImageButtonStyle"
+        android:background="@drawable/img_over_flow"
+        android:visibility="gone"/>
+
+</LinearLayout>

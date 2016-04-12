@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/bg_actionbar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/actionbar_padding_left"
+        android:paddingRight="@dimen/actionbar_padding_right" >
+
+        <Button
+            android:id="@+id/act_cate_manager_btn_back"
+            style="@style/ImageButtonStyle"
+            android:background="@drawable/img_back" />
+
+        <TextView
+            style="@style/TextNavigationTitle"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:text="@string/manage_category" />
+
+        <Button
+            android:id="@+id/act_cate_manager_btn_add"
+            style="@style/ImageButtonStyle"
+            android:background="@drawable/img_add_category" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/act_cate_manager_lv_category"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" />
+
+</LinearLayout>

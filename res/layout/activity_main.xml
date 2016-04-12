@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.kylin.kylinnotepad.view.VariableActionBar
+        android:id="@+id/act_main_var_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/bg_actionbar"
+        android:paddingLeft="@dimen/actionbar_padding_left"
+        android:paddingRight="@dimen/actionbar_padding_right" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/act_main_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/act_main_var_bar" >
+
+        <fragment
+            android:id="@+id/act_main_fragment_note"
+            android:name="com.kylin.kylinnotepad.fragment.NoteFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment
+            android:id="@+id/act_main_fragment_category"
+            android:name="com.kylin.kylinnotepad.fragment.CategoryFragment"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left" />
+    </android.support.v4.widget.DrawerLayout>
+
+    <ProgressBar
+        android:id="@+id/act_main_pb_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

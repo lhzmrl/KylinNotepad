@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KylinNotepad</string>
+    <string name="manage_category">管理类别</string>
+    <string name="open_string">打开</string>
+    <string name="close_string">关闭</string>
+    <string name="search">搜索</string>
+    <string name="select">选择</string>
+    <string name="delete">删除</string>
+    <string name="account">账户</string>
+    <string name="search_label">搜索</string>
+    <string name="search_hint">搜索</string>
+    <string name="title_activity_note">NoteActivity</string>
+    <string name="edit_title">输入标题</string>
+    <string name="edit_content">添加备忘录</string>
+    <string name="empty_note_msg">无有效内容，放弃存储</string>
+    <string name="back">返回</string>
+    <string name="share">分享</string>
+    <string name="video">视频</string>
+    <string name="location">定位</string>
+    <string name="all">全部</string>
+    <string name="default_category_name">我的记事本</string>
+    <string name="manager_category">管理分类</string>
+    <string name="add">添加</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

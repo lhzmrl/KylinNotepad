@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea"
+    android:orientation="vertical" >
+
+    <com.kylin.kylinnotepad.view.VolumeView
+        android:id="@+id/popwindow_audio_volumeview"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/popwindow_audio_volumeview" >
+
+        <CheckBox
+            android:id="@+id/popwindow_audio_cb_start_finish"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/sel_cb_record_start"
+            android:button="@null" />
+
+        <ImageButton
+            android:id="@+id/popwindow_audio_ib_cancle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/popwindow_audio_cb_start_finish"
+            android:background="@drawable/img_ib_del"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/popwindow_audio_cb_pause_resume"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/popwindow_audio_cb_start_finish"
+            android:background="@drawable/sel_cb_record_pause"
+            android:button="@null"
+            android:visibility="gone" />
+    </RelativeLayout>
+    
+    <Button 
+        android:id="@+id/popwindow_audio_btn_close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/img_btn_close"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"/>
+
+</RelativeLayout>

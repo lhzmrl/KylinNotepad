@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ListViewItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/lvi_note_cb_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lvi_note_tv_title"
+            style="@style/TextTitle"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="朗读" />
+
+        <TextView
+            android:id="@+id/lvi_note_tv_content"
+            style="@style/TextContent"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="在哪山道旁，一天雾蒙蒙的朝上，初生的小兰花在草丛里觊觎，我送她归去，与他在此分离，在青草里漂浮，他的洁白的裙衣！" />
+
+        <TextView
+            android:id="@+id/lvi_note_tv_time"
+            style="@style/TextTime"
+            android:text="yy-mm-dd hh:mm:ss" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

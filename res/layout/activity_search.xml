@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/act_search_layout_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/bg_actionbar"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/actionbar_padding_left"
+        android:paddingRight="@dimen/actionbar_padding_right" >
+
+        <Button
+            android:id="@+id/act_search_btn_back"
+            style="@style/ImageButtonStyle"
+            android:background="@drawable/img_back"
+            android:onClick="onClick" />
+
+        <EditText
+            android:id="@+id/act_search_et_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:hint="@string/search" />
+
+        <Button
+            android:id="@+id/act_search_btn_search"
+            style="@style/ImageButtonStyle"
+            android:background="@drawable/img_search"
+            android:onClick="onClick" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/act_search_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/act_search_layout_actionbar" />
+    
+    <ProgressBar 
+        android:id="@+id/act_search_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

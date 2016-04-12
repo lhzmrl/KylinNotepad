@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/actbar_note_normal_btn_category"
+            style="@style/LargeImageButtonStyle"
+            android:background="@drawable/img_category" />
+
+        <Button
+            android:id="@+id/actbar_note_normal_btn_image"
+            style="@style/LargeImageButtonStyle"
+            android:background="@drawable/img_img" />
+
+        <Button
+            android:id="@+id/actbar_note_normal_btn_audio"
+            style="@style/LargeImageButtonStyle"
+            android:background="@drawable/img_audio" />
+
+        <Button
+            android:id="@+id/actbar_note_normal_btn_video"
+            style="@style/ImageButtonStyle"
+            android:text="视频"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" />
+
+    <Button
+        android:id="@+id/actbar_note_normal_btn_cancle"
+        style="@style/ButtonStyle"
+        android:text="取消" />
+
+    <Button
+        android:id="@+id/actbar_note_normal_btn_save"
+        style="@style/ButtonStyle"
+        android:text="保存" />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/actbar_card_interim_tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:text="标题" 
+        android:textColor="#000"
+        android:textSize="22sp"/>
+
+    <Button
+        android:id="@+id/actbar_card_interim_btn_overflow"
+        style="@style/ImageButtonStyle"
+        android:background="@drawable/img_overflow_black" />
+
+</LinearLayout>

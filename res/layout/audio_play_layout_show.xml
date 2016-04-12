@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal" 
+    android:padding="5dp">
+
+    <ImageButton
+        android:id="@+id/audio_play_ib_show_play_view"
+        style="@style/imagebutton_play_audio"
+        android:background="@drawable/img_ib_play"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/audio_play_tv_show_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/audio_play_ib_show_play_view"
+        android:text="00:00:00" />
+
+</RelativeLayout>

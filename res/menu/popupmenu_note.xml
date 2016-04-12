@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_note_location"
+        android:title="@string/location"/>
+    <item
+        android:id="@+id/menu_note_share"
+        android:title="@string/share"/>
+    
+    <item
+        android:id="@+id/menu_note_video"
+        android:title="@string/video"/>
+
+</menu>

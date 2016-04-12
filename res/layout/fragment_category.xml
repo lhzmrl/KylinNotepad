@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_fra_category"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/fra_category_lv_category"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:divider="@null" />
+
+    <Button
+        android:id="@+id/fra_category_btn_manage_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/manage_category" />
+
+</LinearLayout>
